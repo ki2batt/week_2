@@ -1,5 +1,54 @@
+
+$fontcolor: #fffffa;
+$linkcolor: #fed0c0;
+
+%page-section {
+	width: 50%;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 20px;
+	border: 5px solid black;
+	margin-bottom: 10px;
+}
+
 body {
-	 font-family: sans-serif;
-  	img {
-		width: 100%;
-	}
+
+  font-family: sans-serif;
+  color: $fontcolor;
+  margin: 50px;
+	background: url("/images/background-stage-blur.png");
+	width: 100%;
+}
+
+
+a, a:-webkit-any-link {
+	color: $linkcolor;
+}
+
+p {
+	@extend %page-section;
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+div {
+	@extend %page-section;
+}
+
+img {
+	width:100%;
+}
+
+.italicize {
+	font-weight: 700;
+	font-style: italic;
+	font-size: 30px;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+
+h1, h2, h3 {
+  text-decoration: underline;
+  font-weight: bolder;
+}
